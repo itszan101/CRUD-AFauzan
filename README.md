@@ -37,7 +37,12 @@
    php artisan key:generate
    ```
 
-6. Jalankan server:
+6. Generate Seeder:
+   ```bash
+   php artisan sb:seed --class=TaskSeeder
+   ```
+
+7. Jalankan server:
    ```bash
    php artisan serve
    ```
