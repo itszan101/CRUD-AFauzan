@@ -43,3 +43,13 @@
    ```
 
 ---
+
+## Route Endpoints
+
+### Task
+- `GET /tasks` → Daftar task
+- `POST /tasks` → Tambah task
+- `PUT /tasks/{id}` → Edit task
+- `DELETE /task/{id}` → Hapus task
+
+---
