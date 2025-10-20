@@ -1,0 +1,116 @@
+/* ==== Layout dasar ==== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* ==== Alert ==== */
+.alert {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ==== Tombol ==== */
+.btn {
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-blue { background: #2563eb; }
+.btn-blue:hover { background: #1d4ed8; }
+
+.btn-green { background: #16a34a; }
+.btn-green:hover { background: #15803d; }
+
+.btn-yellow { background: #facc15; color: #000; }
+.btn-yellow:hover { background: #eab308; }
+
+.btn-red { background: #dc2626; }
+.btn-red:hover { background: #b91c1c; }
+
+/* ==== Form ==== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* ==== Daftar Tugas ==== */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task-item {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  margin-bottom: 8px;
+}
+
+.task-item:hover {
+  background: #f1f5f9;
+}
+
+.task-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.task-title.done {
+  text-decoration: line-through;
+  color: #6b7280;
+}

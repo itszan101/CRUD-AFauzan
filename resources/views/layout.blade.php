@@ -2,17 +2,20 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>CRUD Laravel 12</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <title>@yield('title', 'CRUD Laravel 12')</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Link ke file CSS -->
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-<body class="bg-gray-100 p-8">
-  <div class="max-w-2xl mx-auto bg-white p-6 shadow-md rounded">
-    <h1 class="text-2xl font-bold mb-4 text-center">@yield('title')</h1>
+<body>
+  <div class="container">
+    <h1>@yield('title')</h1>
+
     @if(session('success'))
-      <div class="bg-green-100 text-green-800 p-2 rounded mb-3">
-        {{ session('success') }}
-      </div>
+      <div class="alert">{{ session('success') }}</div>
     @endif
+
     @yield('content')
   </div>
 </body>
