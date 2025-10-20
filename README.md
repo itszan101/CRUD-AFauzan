@@ -1,6 +1,8 @@
 
 ## About
- - Ahmad Fauzan - web developer - 20-10-2025
+![Tampilan Aplikasi](public/CaptureMain.PNG)
+
+- Ahmad Fauzan - web developer - 20-10-2025
 
 ---
 
